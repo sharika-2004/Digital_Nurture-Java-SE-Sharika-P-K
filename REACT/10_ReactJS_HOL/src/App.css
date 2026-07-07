@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:white;
+}
+
+.App{
+
+    width:100%;
+    text-align:center;
+    margin-top:40px;
+
+}
+
+.App h1{
+
+    font-size:38px;
+    font-weight:bold;
+    margin-bottom:20px;
+
+}
+
+.office-card{
+
+    display:inline-block;
+
+}
+
+.office-image{
+
+    width:200px;
+    height:160px;
+    object-fit:cover;
+
+}
+
+.office-card h2{
+
+    text-align:left;
+    font-size:36px;
+    margin-top:15px;
+    margin-bottom:10px;
+    font-weight:bold;
+
+}
+
+.office-card h3{
+
+    text-align:left;
+    font-size:20px;
+    margin:8px 0;
+
+}
