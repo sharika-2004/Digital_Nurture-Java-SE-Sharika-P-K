@@ -1,0 +1,35 @@
+cd ~/Documents/Digital_Nurture-Java-SE-Sharika-P-K
+
+git checkout -b GitNewBranch
+
+git branch
+
+git branch -a
+
+mkdir BranchDemo
+
+echo "This file is created in GitNewBranch" > BranchDemo/branch.txt
+
+git status
+
+git add BranchDemo
+
+git commit -m "Added BranchDemo in GitNewBranch"
+
+git status
+
+git checkout main
+
+git diff main GitNewBranch
+
+git merge GitNewBranch
+
+git log --oneline --graph --decorate
+
+git branch -d GitNewBranch
+
+git branch
+
+git status
+
+git push origin main
