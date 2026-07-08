@@ -1,0 +1,45 @@
+git --version
+
+git config --global user.name "Your GitHub Username"
+
+git config --global user.email "your-email@example.com"
+
+git config --global --list
+
+cd ~/Documents/Digital_Nurture-Java-SE-Sharika-P-K
+
+pwd
+
+git status
+
+ls
+
+mkdir GIT
+
+cd GIT
+
+echo "Welcome to the version control" > welcome.txt
+
+cat welcome.txt
+
+cd ..
+
+git status
+
+git add GIT
+
+git status
+
+git commit -m "Added Git Hands-on"
+
+git push origin main
+
+git branch
+
+git remote -v
+
+git log --oneline
+
+git pull origin main
+
+git push origin main
