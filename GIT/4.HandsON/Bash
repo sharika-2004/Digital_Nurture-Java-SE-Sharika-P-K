@@ -1,0 +1,51 @@
+cd ~/Documents/Digital_Nurture-Java-SE-Sharika-P-K
+
+git status
+
+git checkout -b GitWork
+
+echo "<message>Hello from GitWork Branch</message>" > hello.xml
+
+git status
+
+git add hello.xml
+
+git commit -m "Added hello.xml in GitWork"
+
+git checkout main
+
+echo "<message>Hello from Main Branch</message>" > hello.xml
+
+git status
+
+git add hello.xml
+
+git commit -m "Added hello.xml in main"
+
+git log --oneline --graph --decorate --all
+
+git diff main GitWork
+
+git merge GitWork
+
+cat hello.xml
+
+echo "<message>Hello from Main Branch</message>" > hello.xml
+
+echo "*.bak" >> .gitignore
+
+git add hello.xml .gitignore
+
+git commit -m "Resolved merge conflict and updated .gitignore"
+
+git branch
+
+git branch -d GitWork
+
+git log --oneline --graph --decorate
+
+git pull --rebase origin main
+
+git push origin main
+
+git status
