@@ -1,22 +1,22 @@
-<!-- Step 29 & 32: Dynamic classes | Step 30: Inline border style binding -->
+
 <div class="card-wrapper" 
      [ngClass]="cardClasses" 
      [ngStyle]="{ 'border-left-color': course.gradeStatus === 'passed' ? 'green' : course.gradeStatus === 'failed' ? 'red' : 'grey' }"
-     [appHighlight]="'#fffde7'"> <!-- Task 3 Directive Binding -->
+     [appHighlight]="'#fffde7'"> 
 
   <h3>{{ course.title }}</h3>
   
-  <!-- Task 3 Custom Pipe -->
+
   <p>Credits: {{ course.credits | creditLabel }}</p>
 
-  <!-- Step 27: Switch badge rendering -->
+  
   <div [ngSwitch]="course.gradeStatus">
     <span *ngSwitchCase="'passed'" class="badge badge--green">Passed</span>
     <span *ngSwitchCase="'failed'" class="badge badge--red">Failed</span>
     <span *ngSwitchCase="'pending'" class="badge badge--grey">Pending</span>
   </div>
 
-  <!-- Step 31: Toggle details panel button click -->
+  
   <div style="margin-top: 12px;">
     <button (click)="toggleDetails()">
       {{ isExpanded ? 'Hide Details' : 'Show Details' }}
