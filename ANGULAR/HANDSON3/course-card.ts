@@ -14,10 +14,10 @@ import { CreditLabelPipe } from '../pipes/credit-label-pipe';
 export class CourseCardComponent {
   @Input() course!: Course;
   
-  // Step 31: Dynamic height toggle property
+  
   isExpanded: boolean = false;
 
-  // Step 32: Refactored ngClass configuration using a clean getter
+  
   get cardClasses() {
     return {
       'card--enrolled': this.course.enrolled,
