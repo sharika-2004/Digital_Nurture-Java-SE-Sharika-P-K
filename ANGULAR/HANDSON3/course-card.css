@@ -1,0 +1,42 @@
+/* Step 30: Card wrapper base styles */
+.card-wrapper {
+  border-left: 6px solid #ccc; 
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: all 0.2s ease-in-out;
+  height: 145px; 
+  overflow: hidden;
+}
+
+/* Step 29: Conditional styles managed via ngClass */
+.card--enrolled {
+  background-color: #eef7ff;
+  border-right: 2px dashed #007bff;
+}
+
+.card--full {
+  background-color: #fffdf5;
+}
+
+/* Step 31: Expanded layout style adjustment */
+.expanded {
+  height: auto;
+  min-height: 220px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.badge--green { background-color: green; }
+.badge--red { background-color: red; }
+.badge--grey { background-color: grey; }
