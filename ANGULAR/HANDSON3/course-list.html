@@ -1,0 +1,21 @@
+
+<div *ngIf="isLoading; else courseContent">
+  <div style="padding: 20px; font-weight: bold;">Loading courses...</div>
+</div>
+
+<ng-template #courseContent>
+  <div class="course-grid" *ngIf="courses.length > 0; else noCourses">
+    
+    
+    <app-course-card 
+      *ngFor="let dataItem of courses; trackBy: trackByCourseId"
+      [course]="dataItem">
+    </app-course-card>
+
+  </div>
+</ng-template>
+
+
+<ng-template #noCourses>
+  <p style="padding: 20px; color: red;">No courses available.</p>
+</ng-template>
