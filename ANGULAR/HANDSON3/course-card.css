@@ -1,4 +1,4 @@
-/* Step 30: Card wrapper base styles */
+
 .card-wrapper {
   border-left: 6px solid #ccc; 
   padding: 16px;
@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-/* Step 29: Conditional styles managed via ngClass */
+
 .card--enrolled {
   background-color: #eef7ff;
   border-right: 2px dashed #007bff;
@@ -21,7 +21,7 @@
   background-color: #fffdf5;
 }
 
-/* Step 31: Expanded layout style adjustment */
+
 .expanded {
   height: auto;
   min-height: 220px;
