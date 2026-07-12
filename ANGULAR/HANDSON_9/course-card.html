@@ -1,0 +1,36 @@
+<div class="card-container" *ngIf="isEnrolled$ | async as enrolledStatus; else loadingOrUnenrolled">
+  <div class="card-details">
+    <div class="course-title">{{ course.name }}</div>
+    <div class="course-meta">
+      Credits: <span class="highlight">{{ course.credits }}</span> | 
+      Status: <span [style.color]="course.status === 'Active' ? 'green' : 'orange'">{{ course.status }}</span>
+    </div>
+  </div>
+
+
+  <button 
+    (click)="toggleEnrollment(true)" 
+    class="btn-action btn-unenroll">
+    Unenroll
+  </button>
+</div>
+
+
+<ng-template #loadingOrUnenrolled>
+  <div class="card-container">
+    <div class="card-details">
+      <div class="course-title">{{ course.name }}</div>
+      <div class="course-meta">
+        Credits: <span class="highlight">{{ course.credits }}</span> | 
+        Status: <span [style.color]="course.status === 'Active' ? 'green' : 'orange'">{{ course.status }}</span>
+      </div>
+    </div>
+
+  
+    <button 
+      (click)="toggleEnrollment(false)" 
+      class="btn-action btn-enroll">
+      Enroll
+    </button>
+  </div>
+</ng-template>
