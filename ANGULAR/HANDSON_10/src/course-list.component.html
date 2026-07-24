@@ -1,0 +1,13 @@
+<div *ngIf="loading$ | async" class="loading">
+    Loading...
+</div>
+
+<div class="course-container" *ngIf="!(loading$ | async)">
+
+    <app-course-card
+        *ngFor="let course of (courses$ | async)"
+        [course]="course"
+        (enrollRequested)="enroll($event)">
+    </app-course-card>
+
+</div>
